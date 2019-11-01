@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Series
+title: 数字图像分析@基础一 *Series*
 date: 2019-11-01 
 tag: math
 mathjax: true
