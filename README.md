@@ -31,7 +31,10 @@ Jekyll 需要依赖：Ruby、bundler
 
 > $ jekyll server
 
-在浏览器输入 [127.0.0.1:4000](127.0.0.1:4000) ， 就可以看到博客效果了。
+bundle和github pages差不多用bundle，且foxit阅览器占用jekyll默认端口4000.
+> $ bundle exec jekyll server --port 4001
+
+在浏览器输入 [127.0.0.1:4001](127.0.0.1:4001) ， 就可以看到博客效果了。
 
 
 ### 提示
