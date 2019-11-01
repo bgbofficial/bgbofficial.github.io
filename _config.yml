@@ -70,6 +70,8 @@ markdown: kramdown
 kramdown:
   input:  GFM
   use_coderay: true
+  math_engine: katex
+
 # Pagination
 gems: [jekyll-paginate,jekyll-sitemap]
 paginate: 20
