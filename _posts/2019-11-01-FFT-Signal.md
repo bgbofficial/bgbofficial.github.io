@@ -6,7 +6,7 @@ tag: math, signal
 mathjax: true
 ---
 
-# Chapter3 Fourier Transform
+# Chapter-3 Fourier Transform
 
 ## 3.2 周期信号的傅里叶级数分析
 
@@ -14,37 +14,50 @@ mathjax: true
 
 $\qquad$由数学分析课程已知，周期函数 $f(t)$ 可由三角函数的线性组合来表示，若 $f(t)$ 的周期为 $T_1$，角频率为 $\omega=\dfrac{2\pi}{T_1}$，频率$f_1=\dfrac{1}{T_1}$，傅里叶级数展开表达式为
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 f(t) 
-&=\quad a_0 +a_1\cos{(\omega_1t})+b_1\sin{(\omega_1t})+a_2\cos{(\omega_2t}) +\\[2ex]
-& \qquad\,\, b_2\sin{(\omega_2t})+ \dotsb + a_n\cos{(\omega_1t})+b_n\sin{(\omega_1t})+\dotsb\\
-&=\quad a_0+\sum_{n=1}^{\infty}[a_n\cos{(n\omega_1t)+b_n\sin{(n\omega_1t})}]
-\end{aligned}\tag{3-1}$$
+&=a_0 +a_1\cos{(\omega_1t})+b_1\sin{(\omega_1t})+a_2\cos{(\omega_2t}) +\\[2ex]
+& \quad b_2\sin{(\omega_2t})+ \dotsb + a_n\cos{(\omega_1t})+b_n\sin{(\omega_1t})+\dotsb\\
+&=a_0+\sum_{n=1}^{\infty}[a_n\cos{(n\omega_1t)+b_n\sin{(n\omega_1t})}]
+\end{aligned}\tag{3-1}
+$$
 
 其中 $n$ 为正整数，各个谐波成分的幅度值按下各式计算：  
 $\qquad$直流分量
 
-$$a_0 = \dfrac{1}{T_1}\int_{t_0}^{t_0+T_1}f(t) \mathrm{d}{t}\tag{3-2}$$
+$$
+a_0 = \dfrac{1}{T_1}\int_{t_0}^{t_0+T_1}f(t) \mathrm{d}{t}\tag{3-2}
+$$
 
 $\qquad$余弦分量的幅度
 
-$$a_n = \dfrac{2}{T_1}\int_{t_0}^{t_0+T_1}f(t)  \cos{(n \omega_1 t)}\, \mathrm{d}{t}\tag{3-3}$$
+$$
+a_n = \dfrac{2}{T_1}\int_{t_0}^{t_0+T_1}f(t)  \cos{(n \omega_1 t)}\, \mathrm{d}{t}\tag{3-3}
+$$
 
 $\qquad$正弦分量的幅度
 
-$$b_n = \dfrac{2}{T_1}\int_{t_0}^{t_0+T_1}f(t)  \sin{(n \omega_1 t)}\, \mathrm{d}{t}\tag{3-4}$$
+$$
+b_n = \dfrac{2}{T_1}\int_{t_0}^{t_0+T_1}f(t)  \sin{(n \omega_1 t)}\, \mathrm{d}{t}\tag{3-4}
+$$
 
 其中 $n=1,2,\dotsb$。
 
 将式（3-1）中同频率项加以合并，可以写成另一种形式
 
-$$f(t) = c_0 +\sum_{n=1}^{\infty} c_n\cos{(n\omega_1t+ \varphi_n)}\tag{3-5}$$
+$$
+f(t) = c_0 +\sum_{n=1}^{\infty} c_n\cos{(n\omega_1t+ \varphi_n)}\tag{3-5}
+$$
 或
 
-$$f(t) = d_0 +\sum_{n=1}^{\infty} d_n\sin{(n\omega_1t + \theta_n)}$$
+$$
+f(t) = d_0 +\sum_{n=1}^{\infty} d_n\sin{(n\omega_1t + \theta_n)}
+$$
 比较（3-1）和（3-5）得出变量关系
 
-$$\left.\begin{aligned}
+$$
+\left.\begin{aligned}
 & a_0 = c_0 = d_0 \\[2ex]
 & c_n = d_n =  \sqrt{a_n^2 + b_n^2} \\[2ex]
 & a_n = c_n \cos\varphi_n = d_n \sin\theta_n \\[2ex]
@@ -52,51 +65,72 @@ $$\left.\begin{aligned}
 & \tan \theta_n = \dfrac{a_n}{b_n} \\[2ex]
 & \tan \theta_n = - \dfrac{b_n}{a_n} \\[2ex]
 & (n=1,2,\dotsb)
-\end{aligned}\right\}\tag{3-6}$$
+\end{aligned}\right\}\tag{3-6}
+$$
 
 $\qquad$各个正、余弦分量的频率 $(n=1,2,\dotsb)$ 必定是基频 $f_1(f_1=1/T_1)$ 的整数倍 $(f_1,2f_1,3f_1,\dotsb)$。  
 $\qquad$从式子（3-3）到（3-6）看出，各个分量幅值 $a_n,b_n,c_n$ 及相位 $\varphi_n$ 都是 $n\omega_1$ 的函数。可以把 $c_n-n\omega_1$ 和 各分量的相位 $\varphi_n-n\omega_1$ 关系图画出，分别得到幅度频谱和相位频谱。  
 
-![3-1](/images\posts\markdown\2019-11-01-FFT-Signal\3-1.png)  
+![3-1](..\images\posts\markdown\2019-11-01-FFT-Signal\3-1.png)  
 $\qquad$周期信号频谱只会出现在 $0,\omega_1,\omega_2,\dotsb$ 离散谱上。
 
 ### （二）指数形式的傅里叶级数
 $\qquad$将周期信号的傅里叶级数表示成指数形式，已知
 
-$$ f(t)=a_0+\sum_{n=1}^{\infty}[a_n\cos{(n\omega_1t)+b_n\sin{(n\omega_1t})}]\tag{3-7}$$
+$$
+f(t)=a_0+\sum_{n=1}^{\infty}[a_n\cos{(n\omega_1t)+b_n\sin{(n\omega_1t})}]\tag{3-7} 
+$$
 根据欧拉公式 $^{[5]}$
 
-$$\begin{aligned} &\cos{(n\omega_1t)}=\dfrac{1}{2}(e^{\mathrm{j}{nw_1t}}+e^{\mathrm{-j}{nw_1t}})\\[2ex] & \sin{(n\omega_1t)}=\dfrac{1}{2\mathrm{j}}(e^{\mathrm{j}{nw_1t}}-e^{\mathrm{-j}{nw_1t}})\end{aligned}$$
+$$
+\begin{aligned} &\cos{(n\omega_1t)}=\dfrac{1}{2}(e^{\mathrm{j}{nw_1t}}+e^{\mathrm{-j}{nw_1t}})\\[2ex] & \sin{(n\omega_1t)}=\dfrac{1}{2\mathrm{j}}(e^{\mathrm{j}{nw_1t}}-e^{\mathrm{-j}{nw_1t}})\end{aligned}
+$$
 
 把欧拉公式带入（3-7）得到
 
-$$f(t)=a_0 + \sum_{n=1}^{\infty}\left(\dfrac{a_n-\mathrm{j}b_n}{2}\mathrm{e}^{\mathrm{j}n\omega_1t} + \dfrac{a_n +\mathrm{j}b_n}{2} \mathrm{e}^{-\mathrm{j}n\omega_1t}  \right)\tag{3-8}
+$$
+f(t)=a_0 + \sum_{n=1}^{\infty}\left(\dfrac{a_n-\mathrm{j}b_n}{2}\mathrm{e}^{\mathrm{j}n\omega_1t} + \dfrac{a_n +\mathrm{j}b_n}{2} \mathrm{e}^{-\mathrm{j}n\omega_1t}  \right)\tag{3-8}
 $$
 令
 
-$$F(n\omega_1)=\dfrac{1}{2}(a_n-\mathrm{j}b_n) \qquad(n=1,2,\dotsb)\tag{3-9}$$
+$$
+F(n\omega_1)=\dfrac{1}{2}(a_n-\mathrm{j}b_n) \qquad(n=1,2,\dotsb)\tag{3-9}
+$$
+
 $\qquad$由于 $a_n$ 是 $n$ 的偶函数， $b_n$ 是 $n$ 的奇函数[见（3-3）/（3-4）]，由式子（3-9）推出
 
-$$F(-n\omega_1)=\dfrac{1}{2}(a_n+\mathrm{j}b_n) \qquad(n=1,2,\dotsb)$$
+$$
+F(-n\omega_1)=\dfrac{1}{2}(a_n+\mathrm{j}b_n) \qquad(n=1,2,\dotsb)
+$$
+
 上述两个式子带入（3-8）得到
 
-$$f(t)=a_0+\sum_{n=1}^{\infty} [F(n\omega_1)\mathrm{e}^{\mathrm{j}n\omega_1t}+F(-n\omega_1)\mathrm{e}^{\mathrm{-j}n\omega_1t}]$$
-令 $F(0)=a_0$，并且 
+$$
+f(t)=a_0+\sum_{n=1}^{\infty} [F(n\omega_1)\mathrm{e}^{\mathrm{j}n\omega_1t}+F(-n\omega_1)\mathrm{e}^{\mathrm{-j}n\omega_1t}]
+$$
+令 $F(0)=a_0$，并且
 
-$$\sum\limits_{n=1}^{\infty}F(-n\omega_1)\mathrm{e}^{\mathrm{-j}n\omega_1t}=\sum\limits_{n=-1}^{-\infty}F(n\omega_1)\mathrm{e}^{\mathrm{j}n\omega_1t}$$
+$$
+\sum\limits_{n=1}^{\infty}F(-n\omega_1)\mathrm{e}^{\mathrm{-j}n\omega_1t}=\sum\limits_{n=-1}^{-\infty}F(n\omega_1)\mathrm{e}^{\mathrm{j}n\omega_1t}
+$$
+
 得到 $f(t)$ 的指数形式傅里叶级数，为
 
-$$f(t)=\sum_{n=-\infty}^{\infty}F(n\omega_1)\mathrm{e}^{\mathrm{j}n\omega_1t}\tag{3-10}$$
+$$
+f(t)=\sum_{n=-\infty}^{\infty}F(n\omega_1)\mathrm{e}^{\mathrm{j}n\omega_1t}\tag{3-10}
+$$
 $\qquad$将（3-3）、（3-4）带入（3-9）得到指数形式傅里叶级数系数 $F(n\omega_1)$ 或简写为 $F_n$，等于
 
-$$F_n=\dfrac{1}{T_1}\int_{t_0}^{t_0+T_1} f(t)\mathrm{e}^{-\mathrm{j}n\omega_1t}\, \mathrm{d}{x}
-\tag{3-11}$$
+$$
+F_n=\dfrac{1}{T_1}\int_{t_0}^{t_0+T_1} f(t)\mathrm{e}^{-\mathrm{j}n\omega_1t}\, \mathrm{d}{x}
+\tag{3-11}
+$$
 其中 $n \in (-\infty,+\infty)$ 的整数。
 $\qquad$从式（3-6）、（3-9）中看出， $F_n$ 与其他系数有如下关系
 
 
-$$\left.
-\begin{aligned}
+$$
+\left.\begin{aligned}
 & F_0 = c_0 = d_0 = a_0 \\[2ex]
 & F_n = \vert F_n \rvert \mathrm{e}^{\mathrm{j}\varphi_n}=\dfrac{1}{2}(a_n-b_n) \\[2ex]
 & F_{-n} = \vert F_{-n} \rvert \mathrm{e}^{\mathrm{-j}\varphi_n}= \dfrac{1}{2}(a_n+b_n) \\[2ex]
@@ -106,7 +140,8 @@ $$\left.
 & b_n = \mathrm{j}(F_n - F_{-n}) \\[2ex]
 & c_n^2 = d_n^2 = a_n^2 + b_n^2 = 4F_nF_{-n} \\
 & \qquad (n=1,2,1\dotsb) 
-\end{aligned} \right\} \tag{3-12}$$
+\end{aligned} \right\} \tag{3-12}
+$$
 由于 $F_n = |F_n|\mathrm{e}^{\mathrm{j}\varphi_n}$，可以画出复数幅度谱 $|F_n|-\omega$ 与复数相位谱 $\varphi-\omega$，且 $|F_n| = \dfrac{1}{2}c_n$。
 
 周期信号 $f(t)$ 的平均功率 $P$ 与傅里叶系数由下列关系
@@ -116,7 +151,8 @@ $$
 & = \overline{f^2(t)}= \dfrac{1}{T_1}\int_{t_0}^{t_o+T_1}f^2(t)\, \mathrm{d}t \\[2ex]
 & = a_0^2 + \frac{1}{2}\sum_{n=1}^{\infty}(a_n^2 + b_n^2)=c_0^2+ \frac{1}{2}\sum_{n=1}^{\infty}c_n^2 \\[2ex]
 & =\sum_{n=-\infty}^{\infty}|F_n|^2
-\end{aligned}\tag{3-13}$$
+\end{aligned}\tag{3-13}
+$$
 
 表明：时域和频域能量守恒，称为帕赛瓦尔定理。
 
@@ -145,7 +181,7 @@ Laplace 是分解到幅度指数变化的正弦函数
 Z是分解到周期变化的离散序列  
 
 对于复数的情况，其实是一样的，只是基的选择改变了。变换的好处就是，便于运算。这一点也不赘述，有体验的人都能感受到所以，最形象的解释就是，这三种变换，都是向量的投影运算，通过不同方向投影的分析，来分析没有投影前的向量。我的建议是，以后看待他们，就像看待向量的分解一样，会少很多纠结。    
- 
+
 有人提到了解方程或者换一个域便于解答，其实都比较表象，只是应用之一。而且这三种变换本身也只是积分变换的一个部分。从国内本科的分科方式来看，这些东西看起来是微积分，但是内核还是更接近于线性代数。其实从拓扑空间开始考虑，貌似这两门课的区别本质上并不是很大，原理是一样的，或者至少很像。
 
 ### 积分变换是波粒二象性在数学中的体现 $^{[4]}$

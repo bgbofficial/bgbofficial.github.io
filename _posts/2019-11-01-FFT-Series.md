@@ -17,8 +17,8 @@ mathjax: true
 - 收敛：如果级数 $\sum\limits_{n=1}^{\infty}u_n$ 的部分和数列 $\{s_n\}$ 有极限，即
 
 $$
-    \lim_{x \to + \infty}s_n=s,
-    $$
+\lim_{x \to + \infty}s_n=s,
+$$
 
 此时，$s$ 叫级数的和。  
 - 余项：$r_n=s-s_n=u_{n+1}+u_{n+2}+\dotsb$ 。
@@ -32,7 +32,7 @@ $$
 
 $$
     (u_1+\dotsb+ u_{n_{1}})+(u_{n_{1}+1}+\dotsb+u_{n_{2}})+(u_{n_{k-1}+1}+\dotsb+u_{n_{k}})+\dotsb
-    $$
+$$
 
 仍然收敛，且其和不变。
 
@@ -40,7 +40,7 @@ $$
 
 $$
     \lim_{n \to \infty} u_n = 0.
-    $$
+$$
 
 ### 三、柯西审敛原理
 判断一个级数的收敛性质。
@@ -49,7 +49,7 @@ $$
 
 $$
     \left\lvert u_{n+1}+u_{n+2}+\dotsb+u_{n+p} \right\rvert < \varepsilon 
-    $$
+$$
 
 
 成立。  
@@ -70,14 +70,14 @@ $$
 
 $$
     \lim_{n \to \infty} \dfrac{u_{n+1}}{u_n}= \rho，
-    $$
+$$
 
 则当 $\rho < 1$ 时级数收敛； $\rho>1$ （或 $\lim\limits_{n \to \infty} \dfrac{u_{n+1}}{u_n}= \infty$ ）时级数发散； $\rho=1$ 级数可能收敛可能发散。
 - 定理5（$\color{Brown}{根值审敛法，柯西判别法}$）：设 $\sum\limits_{n=1}^{\infty}u_n$ 为正项级数，如果
 
 $$
     \lim_{n \to \infty} \sqrt[n]{u_n} = \rho，
-    $$
+$$
 
 则当 $\rho<1$ 时收敛，  $\rho >1$（或 $\lim\limits_{n \to \infty} \sqrt[n]{u_n}=+ \infty$ ）时级数发散， $\rho=1$ 时级数可能收敛也可能发散。
 
@@ -110,7 +110,7 @@ $$
 
 $$
     u_1v_1+(u_1v_2+u_2v_1)+\dotsb+(u_1v_n+u_2v_{n-1}+..+u_nv_1)+\dotsb
-    $$
+$$
 
 也是绝对收敛的，且其和为 $s \cdot \sigma$。
 
@@ -121,7 +121,7 @@ $$
 $$
     \tag{1}
     u_1(x)+u_2(x)+u_3(x)+\dotsb+u_n(x)+\dotsb
-    $$
+$$
 
 称为定义在区间 $I$ 上的（函数项）无穷级数或（函数项）级数。
 对于每一个确定的值 $x_0 \in I$ ，函数项级数（1）成为常数项级数
@@ -129,7 +129,7 @@ $$
 $$
     \tag{2}
     u_1(x_0)+u_2(x_0)+u_3(x_0)+\dotsb+u_n(x_0)+\dotsb
-    $$
+$$
 
 - 收敛点：若（2）在 $x_0$ 处收敛，称 $x_0$ 是函数项级数（1）的收敛点。
 - 发散点同理。
@@ -138,7 +138,7 @@ $$
 
 $$
     s(x)=u_1(x)+u_2(x)+u_3(x)+\dotsb+u_n(x)+\dotsb
-    $$
+$$
 
 - 函数项级数（$\color{Brown}{部分和}$）：把函数项级数的前 $n$ 项的部分和记作 $s_n(x)$。
 - 函数项级数（$\color{Brown}{和函数}$）：把函数项级数的前 $n$ 项的部分和记作 $s_n(x)$ ，则在收敛域上有$\lim\limits_{n\to\infty}s_n(x)=s(x)$。
@@ -146,11 +146,11 @@ $$
 
 ### 二、幂级数及其收敛性
 - 幂级数：函数项级数中各项都是幂函数，它的形式是
- 
+
 $$
     \tag{3}
     \sum_{n=0}^{\infty}a_nx^n=a_0+a_1x+a_2x^2+\dotsb+a_nx^n+\dotsb
-    $$
+$$
 
 其中，常数 $a_0,a_1,a_2,\dotsc,a_n,\dotsc$ 叫做幂级数的系数。
 
@@ -190,7 +190,7 @@ $$
     \tag{5}
     \int_0^x s(x)\,\mathrm{d}x = \int_0^x\left[\sum_{n=0}^{\infty}a_nx^n\right]\mathrm{d}x=\sum_{n=0}^{\infty} \int_0^x a_nx^n \mathrm{d}x  \\
     =\sum_{n=0}^{\infty} \dfrac{a_n}{n+1}x^{n+1} \quad (x \in I),
-    $$
+$$
 
 逐项积分后所得到的幂级数和原级数有相同的收敛半径。
 
@@ -199,7 +199,7 @@ $$
 $$
     \tag{6}
     s'(x)=\left(\sum_{n=0}^{\infty}a_nx^n \right)'= \sum\limits_{n=0}^{\infty}\left(a_nx^n \right)'= \sum\limits_{n=0}^{\infty}n a_nx^{n-1} \quad(\lvert x \rvert< R)
-    $$
+$$
 
 逐项求导后所得到的的幂级数和原级数有相同的收敛半径。
 - 反复应用上述结论，幂级数 $\sum\limits_{n=0}^{\infty}a_nx^n$ 的和函数 $s(x)$ 在其收敛区间 $(-R,R)$ 内具有任意阶导数。
@@ -212,28 +212,28 @@ $$
 $$
     \tag{1}
     f(x) =a_0+a_1(x-x_0)+a_2(x-x_0)^2+\dotsb+a_n(x-x_0)^n+\dotsb, \, x \in U(x_0)
-    $$
+$$
 
 根据和函数性质，可知 $f(x)$ 在 $U(x_0)$ 内应具有任意阶导数，且
 
 $$
     f^{(n)}(x) = n!a_n + (n+1)!a_{n+1}(x-x_0)+\dfrac{(n+2)!}{2!}(x-x_0)^2 + \dotsb,
-    $$
+$$
 
 可得到 $f^{(n)}(x_0)=n!a_n$，于是 
     
 $$
     \tag{2}
     a_n=\dfrac{1}{n!}f^{(n)}x_0 \quad (n=0,1,2,\dotsc)
-    $$
-    
+$$
+
 - 若函数 $f(x)$ 有幂级数展开式（1），那么该幂函数的系数 $a_n$ 由公式（2）确定，即该幂级数必为
 
 $$
     \tag{3}
     f(x_0)+f'(x_0)(x-x_0)+ \dotsb + \dfrac{1}{n!}f^{(n)}(x_0)(x-x_0)^n + \dotsb \\
     = \sum\limits_{n=0}^{\infty} \dfrac{1}{n!}f^{(n)}(x_0)(x-x_0)^n,
-    $$
+$$
 
 此幂级数（3）叫做函数 $f(x)$ 在点 $x_0$ 处的$\color{brown}{泰勒级数}$。
 
@@ -242,20 +242,22 @@ $$
 $$
     \tag{4}
     f(x)= \sum\limits_{n=0}^{\infty} \dfrac{1}{n!}f^{(n)}(x_0)(x-x_0)^n, \quad x \in U(x_0)
-    $$
+$$
 
 此展开式（4）为函数 $f(x)$ 在点 $x_0$ 处的$\color{brown}{泰勒展开式}$。
 - 如： 函数项级数$1+x+x^2+ \dotsb + x^n + \dotsb$ 在 $\lvert x \rvert<1$ 时，这时候级数收敛于和 $\dfrac{1}{1-x}$ ;
     此时有
-    
-$$\dfrac{1}{1-x}=1+x+x^2+ \dotsb + x^n + \dotsb \quad (-1<x<1)；$$
+
+$$
+\dfrac{1}{1-x}=1+x+x^2+ \dotsb + x^n + \dotsb \quad (-1 <x<1)
+$$
 
 - 反过来， $f(x)$可以在区间 $(-1<x<1)$ 上展开成 $1+x+x^2+ \dotsb + x^n + \dotsb$。
 - 定理：设函数 $f(x)$ 在点 $x_0$ 的某一领域 $U(x_0)$ 内具有各阶导数，则 $f(x)$ 在该领域内能展开成泰勒级数的充分必要条件是在该领域内 $f(x)$ 的泰勒公式中的余项 $R_n(x)$ 当 $n \to \infty$ 时的极限为零，即：
 
 $$
     \lim_{n \to \infty}R_n(x) = 0, \quad x \in U(x_0).
-    $$
+$$
 
 - 麦克劳林级数：
 - 麦克劳林展开式：
@@ -286,7 +288,7 @@ $$
 $$
     \tag{1}
     f(t)=A_0+\sum_{n=0}^{\infty}A_n\sin(n\omega t+\varphi_n)
-    $$
+$$
 
 其中 $A_0,A_n,\varphi_n(n=,1,2,3,\dotsb)$ 是常数。
 
@@ -295,14 +297,14 @@ $$
 $$
     \tag{2}
     \dfrac{a_0}{2}+\sum_{n=1}^{\infty}(a_n\cos\dfrac{n \pi t}{l}+b_n\sin\dfrac{n \pi t}{l})
-    $$
+$$
 
 其中 $a_0,a_n,b_n(n=1,2,3,\dotsb)$ 是常数。令 $\dfrac{\pi t}{l}=x$，（2）变为：
 
 $$
     \tag{3}
     \dfrac{a_0}{2}+\sum_{n=1}^{\infty}(a_n \cos nx+b_n\sin nx)
-    $$
+$$
 
 周期为 $2 \pi$ 。（第一个的周期为 $2\pi$ ，第二个周期为 $\pi$，以此类推。所以三角函数周期为 $2\pi$ 没毛病。）
 
@@ -313,11 +315,11 @@ $$
     首先，考虑向量 $\pmb{a}=(1,0,1)$ 和向量 $\pmb{b}=(-1,0,1)$ ，由于向量内积为 $\pmb{a}\cdot \pmb{b}= 1 \cdot -1 + 0 \cdot 0 + 1 \cdot 1 = 0$ ，所以二者正交，即*向量对应元素乘积*的和为 $0$ ，我们称为正交。同样，对于函数，我们可以把函数看成*无穷维度*的函数，比如 $f(x)=(f(1),f(2),f(3),\dotsb))$ ， $g(x)=(g(1),g(2),g(3),\dotsb))$，因此，$f(x)$ 和 $g(x)$ 的内积为 $f(x)\cdot g(x)=f(1)\cdot g(1)+f(2)\cdot g(2)+f(3)\cdot g(3)+\dotsb$ ， 学过微积分的可以发现，该式即为 $f(x)\cdot g(x)$ 在定义域上的积分。而三角函数只是特殊的正交函数罢了，类似的还有很多。。
 
     - 三角函数系
-        
+      
 $$
     \tag{4}
     1,\cos x,\sin x,\cos 2x,\sin 2x,\dotsb,\cos nx,\sin nx,\dotsb
-    $$
+$$
 
 在区间 $[-\pi,\pi]$ 上正交，指的是（4）中任何两个不同函数的乘积在区间 $[-\pi,\pi]$ 上的积分等于零。
 
@@ -326,13 +328,13 @@ $$
         & \int_{-\pi}^\pi \sin kx\, \cos nx \,\mathrm{d}x = 0\quad(k,n=1,2,3,\dotsb),\\[2ex]
         & \int_{-\pi}^\pi \sin kx\, \sin nx \,\mathrm{d}x = 0\quad(k,n=1,2,3,\dotsb,k \ne n),\\[2ex]
         & \int_{-\pi}^\pi \cos kx\, \cos nx \,\mathrm{d}x = 0\quad(k,n=1,2,3,\dotsb,k \ne n).\end{aligned}
-        $$
+$$
 
 证明：积化和差求定积分。速查表：
     
 $$
         \int_{-\pi}^{\pi}1^2 \mathrm{d}{x}=2\pi,\int_{-\pi}^{\pi}\sin^2 nx\,\mathrm{d}{x}=\pi,\int_{-\pi}^{\pi}\cos ^2 nx\,\mathrm{d}{x}=\pi.
-        $$
+$$
 
 ### 二、函数展开成傅里叶级数
 设 $f(x)$ 是周期为 $2\pi$ 的周期函数，且能展开成三角级数
@@ -345,14 +347,14 @@ $$
 如何利用 $f(x)$ 把 $a_0,a_1,b_1,\dotsb$ 表示出来？
 
 - 方法：$a_0$，（5）左右积分；$a_n$，左右乘以 $\cos nx$，求积分；$b_n$，左右乘以 $\sin nx$，求积分。得
-    
+  
 $$
     \left.
     \begin{aligned}
     &a_n=\dfrac{1}{\pi}\int_{-\pi}^{\pi}f(x)\cos nx \,\mathrm{d}{x}\quad(n=0,1,2,3,\dotsb),\\
     &b_n=\dfrac{1}{\pi}\int_{-\pi}^{\pi}f(x)\sin nx \,\mathrm{d}{x}\quad(n=1,2,3,\dotsb).\end{aligned}
     \right\}\tag{6}
-    $$
+$$
 
 - 傅里叶系数： $a_n,b_n$ 叫做函数 $f(x)$ 的傅里叶系数。
 - 傅里叶级数：将傅里叶系数（6）带入（5）中得到的三角级数叫做函数 $f(x)$ 的傅里叶级数。 
@@ -374,24 +376,26 @@ $$
 ## 第八节 一般周期函数的傅里叶级数
 ### 一、周期为 $2l$ 的周期函数的傅里叶级数
 - 定理： 设周期为 $2l$ 的周期函数 $f(x)$ 满足收敛定理的条件，则它的傅里叶级数展开式为
-    
+  
 $$
-    \tag{1}
+\tag{1}
     f(x) = \dfrac{a_0}{2}+ \sum_{n=1}^{\infty} \left(a_n \cos \dfrac{n\pi x}{l} + b_n \sin  \dfrac{n\pi x}{l} \right)\,(x \in C),
-    $$
+$$
 
 其中，
 
 $$
-    \left.
+\left.
     \begin{aligned}
     & a_n = \dfrac{1}{l} \int_{-l}^{l}f(x) \cos \dfrac{n\pi x}{l} \mathrm{d}{x}\,(n=0,1,2,\dotsb),\\[2ex]
     & b_n = \dfrac{1}{l} \int_{-l}^{l}f(x) \sin \dfrac{n\pi x}{l} \mathrm{d}{x}\,(n=1,2,\dotsb).\\[2ex]
     \end{aligned}
     \right\}    \tag{2}
-    $$
+$$
 
-$$C=\{x| f(x)= \dfrac{1}{2}[f(x^-)+f(x^+)] \}$$
+$$
+C=\{x| f(x)= \dfrac{1}{2}[f(x^-)+f(x^+)] \}
+$$
 
 证明，令 $z=\dfrac{\pi x}{l}$，区间 $-l \le x \le l$ 就变换成 $-\pi \le z \le \pi$。
 
