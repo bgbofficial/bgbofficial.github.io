@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 数字图像分析@基础一 *Series*
+title: 数字图像分析@01 *Series*
 date: 2019-11-01 
 tag: math
 mathjax: true
@@ -187,7 +187,7 @@ $$
 - 性质2：幂级数 $\sum\limits_{n=0}^{\infty}a_nx^n$ 的和函数 $s(x)$ 在其收敛域 $I$ 上可积，并有逐项积分公式
 
 $$
-    \tag{5}
+\tag{5}
     \int_0^x s(x)\,\mathrm{d}x = \int_0^x\left[\sum_{n=0}^{\infty}a_nx^n\right]\mathrm{d}x=\sum_{n=0}^{\infty} \int_0^x a_nx^n \mathrm{d}x  \\
     =\sum_{n=0}^{\infty} \dfrac{a_n}{n+1}x^{n+1} \quad (x \in I),
 $$

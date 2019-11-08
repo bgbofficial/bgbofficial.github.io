@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 数字图像分析@基础二 *Signal-1D Fourier Alysis*
+title: 数字图像分析@02 *Signal-1D Fourier Alysis*
 date: 2019-11-01 
 tag: math, signal
 mathjax: true
@@ -71,7 +71,7 @@ $$
 $\qquad$各个正、余弦分量的频率 $(n=1,2,\dotsb)$ 必定是基频 $f_1(f_1=1/T_1)$ 的整数倍 $(f_1,2f_1,3f_1,\dotsb)$。  
 $\qquad$从式子（3-3）到（3-6）看出，各个分量幅值 $a_n,b_n,c_n$ 及相位 $\varphi_n$ 都是 $n\omega_1$ 的函数。可以把 $c_n-n\omega_1$ 和 各分量的相位 $\varphi_n-n\omega_1$ 关系图画出，分别得到幅度频谱和相位频谱。  
 
-![3-1](..\images\posts\markdown\2019-11-01-FFT-Signal\3-1.png)  
+![3-1](https://wzwimg-1300620626.cos.ap-chengdu.myqcloud.com/githubimg/clipboard_20191108092825.png)  
 $\qquad$周期信号频谱只会出现在 $0,\omega_1,\omega_2,\dotsb$ 离散谱上。
 
 ### （二）指数形式的傅里叶级数
