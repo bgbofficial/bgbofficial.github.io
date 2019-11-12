@@ -2,7 +2,7 @@
 layout: post
 title: 数字图像分析-06 *卷积感性理解*
 date: 2019-11-08 
-tag: math, signal
+tag: Signal
 mathjax: true
 ---
 

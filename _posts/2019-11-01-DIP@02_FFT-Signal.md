@@ -2,7 +2,7 @@
 layout: post
 title: 数字图像分析@02 *Signal-1D Fourier Alysis*
 date: 2019-11-01 
-tag: math, signal
+tag: Signal
 mathjax: true
 ---
 
@@ -25,7 +25,6 @@ $$
 
 其中 $n$ 为正整数，各个谐波成分的幅度值按下各式计算：  
 $\qquad$直流分量
-
 $$
 a_0 = \dfrac{1}{T_1}\int_{t_0}^{t_0+T_1}f(t) \mathrm{d}{t}\tag{3-2}
 $$
@@ -206,10 +205,17 @@ Z是分解到周期变化的离散序列
 的分布。类比在实空间里的密度概念，我们可以把这个分布理解为速率的密度。速率密度大的地方，就表示处于这段速率的粒子数目多。
 
 # Reference
-[1] 郑君里, 应启珩, and 杨为理, 信号与系统. 高等教育出版社, 2000.  
+
+[1*] 郑君里, 应启珩, and 杨为理, 信号与系统. 高等教育出版社, 2000. 
+
 [2] 谷超豪等, 数学物理方程. 高等教育出版社, 2002.  
+
 [3] [怎么通俗地介绍拉普拉斯变换、傅里叶变换和 z 变换？](https://www.zhihu.com/question/19983179/answer/26686107)  
+
 [4] [Quantum Mechanics and the Fourier Transform](https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Quantum_Tutorials_(Rioux)/Quantum_Fundamentals/04.1%3A_Quantum_Mechanics_and_the_Fourier_Transform)  
+
 [5] [欧拉公式的意义](https://www.zhihu.com/question/23074201/answer/23524103)  
+
 [6] [为什么坐标空间的傅立叶变换是动量空间？如何理解？](https://www.zhihu.com/question/22396883?sort=created)  
+
 [7] [动量空间: 物理的状态,就活在那些基础状态组成的态空间](http://blog.sina.com.cn/s/blog_727942e70102wmmh.html)

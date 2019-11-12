@@ -2,7 +2,7 @@
 layout: post
 title: 数字图像分析@05 *Inner Product of Functions*
 date: 2019-11-08 
-tag: math, signal
+tag: Signal
 mathjax: true
 ---
 

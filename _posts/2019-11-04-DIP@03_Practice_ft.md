@@ -2,7 +2,7 @@
 layout: post
 title: 数字图像分析@03 *Practice FT*
 date: 2019-11-04 
-tag: math, signal
+tag: Signal
 mathjax: true
 ---
 
