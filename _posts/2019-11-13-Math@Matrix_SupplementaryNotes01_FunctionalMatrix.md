@@ -54,6 +54,7 @@ $$
 $$
 
 粒子2：
+
 $$
 B=\begin{pmatrix}
 3 & 2 & -2 \\
@@ -61,6 +62,7 @@ B=\begin{pmatrix}
 4 & 2 & -3
 \end{pmatrix}
 $$
+
 特征值 $\lambda$，代数重复度 $m$ 和几何重复度 $a$ 分别为：
 
 $$

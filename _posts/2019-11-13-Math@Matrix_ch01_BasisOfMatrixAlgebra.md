@@ -29,6 +29,7 @@ mathjax: true
 共轭与转置关系： $A^{\mathrm{H}} = (A^{\mathrm{*}})^{\mathrm{T}} = (A^{\mathrm{T}})^{\mathrm{*}}$
 
 共轭：
+
 $$
 \mathrm{if}\: A = \begin{bmatrix}
 3+i & 5\\
@@ -46,6 +47,7 @@ $$
 `矩阵函数`：函数矩阵函数求解 [Link]( https://blog.csdn.net/weixin_39749553/article/details/78835182 ) ，See in Supplementary Notes: [FunctionalMatrix](./2019-11-13-Math@Matrix_SupplementaryNotes01_FunctionalMatrix.md) 。
 
 三角函数：定义，
+
 $$
 \begin{align}
 &\sin(A)=\sum_{n=0}^{\infty}\dfrac{(-1)^nA^{2n+1}}{(2n+1)!}=A-\dfrac{1}{3!}A^3+\dfrac{1}{5!}A^5-\dotsb\tag{1.1.17}\\
@@ -54,10 +56,13 @@ $$
 
 \end{align}
 $$
+
 矩阵导数：若矩阵 $A$ 的元素 $a_{ij}$ 都是参数 $t$ 的函数，则矩阵的导数定义为
+
 $$
 \dfrac{\mathrm{d}A}{\mathrm{d}t}=\dot A = 
 $$
+
 矩阵积分：
 
 
