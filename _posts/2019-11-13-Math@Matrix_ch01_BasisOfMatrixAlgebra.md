@@ -42,7 +42,7 @@ $$
 
 乘法：矩阵与标量乘法，（推广到）矩阵与向量的乘法，（推广到）矩阵与矩阵的乘法，乘法结合律，乘法左分配率，乘法右分配率，不满足交换律，（一般不满足）乘法交换律 $AB \ne BA$。
 
-特殊矩阵：逆矩阵，共轭|转置|共轭转置|逆矩阵的关系，幂等矩阵，幂零矩阵，零矩阵。
+特殊矩阵：逆矩阵，共轭-转置-共轭转置-逆矩阵的关系，幂等矩阵，幂零矩阵，零矩阵。
 
 `矩阵函数`：函数矩阵函数求解 [Link]( https://blog.csdn.net/weixin_39749553/article/details/78835182 ) ，See in Supplementary Notes: [FunctionalMatrix](./2019-11-13-Math@Matrix_SupplementaryNotes01_FunctionalMatrix.md) 。
 
