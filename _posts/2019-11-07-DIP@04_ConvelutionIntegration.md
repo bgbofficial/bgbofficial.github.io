@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 数字图像分析@04 *Convelution Integration*
+title: DIP@04 *Convelution Integration*
 date: 2019-11-04 
 tag: Signal
 mathjax: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 数字图像分析-06 *卷积感性理解*
+title: DIP@-06 *卷积感性理解*
 date: 2019-11-08 
 tag: Signal
 mathjax: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 数字图像分析@02 *Signal-1D Fourier Alysis*
+title: DIP@02 *Signal-1D Fourier Alysis*
 date: 2019-11-01 
 tag: Signal
 mathjax: true

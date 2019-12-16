@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 数字图像分析@01 *Series*
+title: DIP@01 *Series*
 date: 2019-11-01 
 tag: Math
 mathjax: true

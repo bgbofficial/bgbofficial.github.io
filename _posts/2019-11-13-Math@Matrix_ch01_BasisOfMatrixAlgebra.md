@@ -26,7 +26,11 @@ mathjax: true
 
 基本运算：转置 $A^{\mathrm{T}}$，共轭 $A^{\mathrm{*}}$，共轭转置（Hermitian） $A^{\mathrm{H}}$，加法，乘法。
 
-共轭与转置关系： $A^{\mathrm{H}} = (A^{\mathrm{*}})^{\mathrm{T}} = (A^{\mathrm{T}})^{\mathrm{*}}$
+共轭与转置关系：  
+
+$$
+A^{\mathrm{H}} = (A^*)^{\mathrm{T}} = (A^{\mathrm{T}})^*
+$$
 
 共轭：
 
@@ -49,12 +53,11 @@ $$
 三角函数：定义，
 
 $$
-\begin{align}
-&\sin(A)=\sum_{n=0}^{\infty}\dfrac{(-1)^nA^{2n+1}}{(2n+1)!}=A-\dfrac{1}{3!}A^3+\dfrac{1}{5!}A^5-\dotsb\tag{1.1.17}\\
-&\cos(A)=\sum_{n=0}^{\infty}\dfrac{(-1)^nA^{2n+1}}{(2n)!}=I-\dfrac{1}{2!}A^2+\dfrac{1}{4!}A^4-\dotsb\tag{1.1.18}\\
-&\mathrm{e}^A=\sum_{n=0}^{\infty}\dfrac{1}{n!}A^n=I+A+\dfrac{1}{2}A^2+\dfrac{1}{3!}A^3+\dotsb\tag{1.1.19}\\
-
-\end{align}
+\begin{aligned}
+& \sin(A)=\sum_{n=0}^{\infty}\dfrac{(-1)^nA^{2n+1}}{(2n+1)!}=A-\dfrac{1}{3!}A^3+\dfrac{1}{5!}A^5-\dotsb  \\
+& \cos(A)=\sum_{n=0}^{\infty}\dfrac{(-1)^nA^{2n+1}}{(2n)!}=I-\dfrac{1}{2!}A^2+\dfrac{1}{4!}A^4-\dotsb   \\
+& \mathrm{e}^A=\sum_{n=0}^{\infty}\dfrac{1}{n!}A^n=I+A+\dfrac{1}{2}A^2+\dfrac{1}{3!}A^3+\dotsb   \\
+\end{aligned}
 $$
 
 矩阵导数：若矩阵 $A$ 的元素 $a_{ij}$ 都是参数 $t$ 的函数，则矩阵的导数定义为
@@ -64,6 +67,12 @@ $$
 $$
 
 矩阵积分：
+
+$$
+\begin{aligned}
+d
+\end{aligned}
+$$
 
 
 

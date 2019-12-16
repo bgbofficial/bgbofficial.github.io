@@ -80,7 +80,7 @@ $$
 \end{pmatrix}
 $$
 
-### 2.2 多项式 $^{[2]}$ 
+### 2.2 多项式 $^{[2]}$ 
 
 定义：已知， $A \in C^{ n\times n}$ 和关于变量 $x$ 的多项式
 
@@ -163,7 +163,7 @@ $$
 
 # 其他问题
 
-函数 $f(x)'=(x^2)'=2x$，那么 $f(x)^{i}=?$ 也就是 Imaginary derivative of $x$；$f(x)^{'1/2}=?$ ，也就是 Half Derivative of $x$，即分数阶微分。 
+函数 $f(x)'=(x^2)'=2x$，那么 $f(x)^{i}=?$ 也就是 Imaginary derivative of $x$；$f(x)^{(1/2)}=?$ ，也就是 Half Derivative of $x$，即分数阶微分。 
 
 # Reference
 
